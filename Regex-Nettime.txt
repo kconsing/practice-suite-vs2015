@@ -1,0 +1,29 @@
+﻿            //My regular expression below:
+            //(\d+)[-.\/](\d+)[-.\/](\d+) (\d+)[:](\d+)[:](\d+) [A-Z][M]
+
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.RedirectStandardOutput = true;
+            startInfo.UseShellExecute = false;
+            startInfo.FileName = "NET.exe";
+            startInfo.Arguments = @"TIME \\karl-c1";
+            process.StartInfo = startInfo;
+            process.Start();
+
+           
+            string output = process.StandardOutput.ReadToEnd();
+
+            //Console.WriteLine(output);
+            //Console.WriteLine(DateTime.ParseExact(output, "T", CultureInfo.InvariantCulture));
+            
+            Regex r = new Regex(@"(\d+)[-.\/](\d+)[-.\/](\d+) (\d+)[:](\d+)[:](\d+) [A-Z][M]");
+            Match m = r.Match(output);
+            if(m.Success)
+            {
+                Console.WriteLine(DateTime.ParseExact(m.Value, "MM/dd/yyyy h:mm:ss tt", CultureInfo.InvariantCulture).ToString());
+            }
+            else
+            {
+                Console.WriteLine("Fail");
+            }
