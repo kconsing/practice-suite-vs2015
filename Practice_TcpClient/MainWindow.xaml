@@ -5,9 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practice_TcpClient"
         mc:Ignorable="d"
-        Title="MainWindow" SizeToContent="Height" Height="Auto" Width="200">
-    <StackPanel>
-        <TextBox x:Name="tbSend" />
-        <Button x:Name="btnSend" Content="Send" Width="50" Height="20" Click="btnSend_Click"/>
-    </StackPanel>
+        Title="MainWindow" SizeToContent="Height" Height="Auto" Width="300">
+
+
+    <Border Padding="5">
+        <StackPanel>
+            <Grid Margin="0 0 0 5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Server: "  Grid.Column="0" Margin="0 0 0 0"/>
+                <TextBox x:Name="tbServer" IsEnabled="True"  Grid.Column="1" Margin="0 0 0 0"/>
+
+                <TextBlock Text="Port: "  Grid.Column="2" Margin="5 0 0 0"/>
+                <TextBox x:Name="tbPort" IsEnabled="True"  Grid.Column="3" Margin="0 0 0 0"/>
+            </Grid>
+
+            <Grid Margin="0 0 0 5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Message: "  Grid.Column="0" Margin="0 0 0 0"/>
+                <TextBox x:Name="tbMessage" IsEnabled="True"  Grid.Column="1" Margin="0 0 0 0"/>
+            </Grid>
+
+
+            <Button x:Name="btnSend" Content="Send" Width="50" Height="20" Click="btnSend_Click"/>
+        </StackPanel>
+    </Border>
 </Window>

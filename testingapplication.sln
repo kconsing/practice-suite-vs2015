@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_Sockets", "..\WpfA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_TcpClient", "Practice_TcpClient\Practice_TcpClient.csproj", "{D1D34B05-0968-4C50-9E7E-243739F6F4C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_GraphTheory", "Practice_GraphTheory\Practice_GraphTheory.csproj", "{F9CEC356-8002-4A1D-9F20-9D22637E1748}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{D1D34B05-0968-4C50-9E7E-243739F6F4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1D34B05-0968-4C50-9E7E-243739F6F4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1D34B05-0968-4C50-9E7E-243739F6F4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CEC356-8002-4A1D-9F20-9D22637E1748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CEC356-8002-4A1D-9F20-9D22637E1748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CEC356-8002-4A1D-9F20-9D22637E1748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CEC356-8002-4A1D-9F20-9D22637E1748}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

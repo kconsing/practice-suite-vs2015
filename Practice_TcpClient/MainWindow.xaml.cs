@@ -20,16 +20,40 @@ namespace Practice_TcpClient
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<string> result;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            tbMessage.Text = "Hello World";
+            tbPort.Text = "22222";
+            tbServer.Text = "10.1.10.130";
         }
 
         private void btnSend_Click(object sender, RoutedEventArgs e)
         {
-            client cli = new Practice_TcpClient.client(22222);
+            try
+            {
+                client cli = new Practice_TcpClient.client(tbServer.Text, Convert.ToInt32(tbPort.Text));
 
-            cli.Request(tbSend.Text);
+                result = cli.Request(tbMessage.Text);
+            }
+            catch(FormatException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            
+            if(result != null)
+            {
+                //MessageBox.Show(result.Count.ToString());
+                MessageBox.Show("result = " + result[0]);
+            }
+            else
+            {
+                //Do nothing
+            }
         }
     }
 }

@@ -48,12 +48,11 @@ namespace Practice_TcpClient
 
                 //rcvd_MESG = reader.ReadToEnd();
 
-                /*
                 while ((rcvd_MESG = this.reader.ReadLine()) != null)
                 {
                     response.Add(rcvd_MESG);
                 }
-                */
+                
 
                 this.reader.Close();
                 this.sender.Close();
