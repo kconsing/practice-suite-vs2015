@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_TcpClient", "Pract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_GraphTheory", "Practice_GraphTheory\Practice_GraphTheory.csproj", "{F9CEC356-8002-4A1D-9F20-9D22637E1748}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FallFoolishnessDrafter", "FallFoolishnessDrafter\FallFoolishnessDrafter.csproj", "{10C2E22D-F577-44B9-A85A-824498FD9D33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{F9CEC356-8002-4A1D-9F20-9D22637E1748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9CEC356-8002-4A1D-9F20-9D22637E1748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9CEC356-8002-4A1D-9F20-9D22637E1748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C2E22D-F577-44B9-A85A-824498FD9D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C2E22D-F577-44B9-A85A-824498FD9D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C2E22D-F577-44B9-A85A-824498FD9D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C2E22D-F577-44B9-A85A-824498FD9D33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
