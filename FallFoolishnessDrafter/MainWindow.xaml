@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FallFoolishnessDrafter"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525"
-        WindowStyle="None"   
+        WindowStyle="SingleBorderWindow"   
         WindowState="Maximized"
         ResizeMode="NoResize"
         >
@@ -23,6 +23,16 @@
             <ImageBrush ImageSource="{Binding BackgroundPath}" Stretch="UniformToFill"/>
         </Grid.Background>
 
+        
+        <ListBox x:Name="Roster" Margin="5" Grid.Column="0" Background="Black" Opacity=".75">
+            <ListBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </ListBox.Resources>
+        </ListBox>
+
+        
         <DockPanel   Grid.Column="1">
             <!--<Image  x:Name="PictureBox"
                     Source="{Binding PicturePath}" 
@@ -48,13 +58,11 @@
                         Padding="10"
                         />
                 </Border>
-
-
-
             </Border>
 
-
-
+            <TextBox DockPanel.Dock="Top"
+                     Margin="5 5 5 0"></TextBox>
+            
             <ListBox x:Name="DraftPool"
                      Grid.Column="1"
                      Margin="5"
